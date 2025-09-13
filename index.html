@@ -1,12 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="shortcut icon"
+      href="./src/img/tailwind icon.svg"
+      type="image/x-icon"
+    />
+    <link href="./dist/output.css" rel="stylesheet" />
     <title>Tailwind Login Page</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+    <div class="max-w-[700px] mx-auto my-20">
+      <div class="flex items-center justify-center flex-col gap-10">
+        <img class="size-16" src="./src/img/tailwind icon.svg" alt="" />
+        <h1 class="font-bold text-3xl">Sign in to your account</h1>
+      </div>
+      <div class="flex flex-col items-center justify-center gap-6 mt-12 mb-6">
+        <div class="flex flex-col w-110 gap-2">
+          <label class="text-[16px] font-semibold" for="Email address">Email address</label>
+          <input
+            class="h-10 rounded-[6px] outline-gray-300 outline-2" type="email"/>
+        </div>
+        <div class="flex flex-col w-110 gap-2">
+          <label class="text-[16px] font-semibold flex items-center justify-between" for="Password">Password
+            <span>
+                <a href="#">
+                    <p class="text-blue-600">Forget password?</p>
+                </a>
+            </span>
+          </label>
+          <input class="h-10 rounded-[6px] outline-gray-300 outline-2" type="email"/>
+        </div>
+      </div>
+      <div class="flex items-center justify-center">
+        <a href="#">
+          <p class="w-110 h-10 leading-10 bg-blue-600 text-center text-white rounded-[6px] font-semibold">Sign in</p>
+        </a>
+      </div>
+      <div class="flex items-center justify-center mt-12">
+        <p class="text-gray-500 font-semibold">Not a number?
+          <span>
+            <a href="#">
+                <p class="text-blue-600 font-semibold">Start 14 day free trial</p>
+                </a>
+          </span>
+        </p>
+      </div>
+    </div>
+  </body>
 </html>
